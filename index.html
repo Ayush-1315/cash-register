@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/cash.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="billAmount">
+            <h1 id="cash-register"><img src="/images/treasure.svg" id="biller-logo" alt=""> Cash Register Manager</h1>
+            <p>Enter bill amount and cash given by the customer and know minimum number of notes to return.</p>
+            <h2 id="bill-amt">Bill Amount</h2>
+            <input type="number" id="bill" placeholder="Enter bill Amount">
+            <span id="proceed">Next</span>
+        </div>
+        <div class="cashGiven">
+            <h2 id="cash-amt">Cash Given</h2>
+            <input type="number" id="cash" placeholder="Enter bill Amount">
+            <span id="check">check</span>
+        </div>
+        <div class="returnAmount">
+            <h2 class="return">
+                Return Change: </h2>
+            <table id="notes">
+                <thead>
+                    <tr>
+                        <td>No. of Notes</td>
+                        <th class="numberNotes"></th>
+                        <th class="numberNotes"></th>
+                        <th class="numberNotes"></th>
+                        <th class="numberNotes"></th>
+                        <th class="numberNotes"></th>
+                        <th class="numberNotes"></th>
+                        <th class="numberNotes"></th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Note</td>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

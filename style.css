@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --color:#02463c;
+    --proceed:#a6e9d4;
+    --button:#215f50;
+    --description:#baf4ee;
+    --font:#88ccc0;
+    --note:white;
+}
+#biller-logo{
+    height:3rem;
+    filter:invert();
+    position: relative;
+    top:0.8rem;
+}
+.container{
+    height:100vh;
+    width:fit-content;
+    margin: auto;
+}
+#cash-register,.billAmount>p{
+    color: var(--font);
+    margin: 1rem 0rem;
+}
+.billAmount,.returnAmount,.cashGiven{
+    height:fit-content;
+    width:100%;
+    background-color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.billAmount>p{
+    text-align: center;
+    width:50%;
+    line-height: 1.4rem;
+}
+#bill-amt,#cash-amt,.return{
+    color:var(--description);
+    /* margin-top: 1.5rem;
+    margin:1rem; */
+    margin-bottom: 1rem;
+}
+#bill,#cash{
+    width:90%;
+    height: 3rem;
+    padding:0.5rem;
+    margin:0.5rem 0;
+}
+#proceed,#check{
+    background-color: var(--proceed);
+    color:var(--button);
+    padding: 1rem 1.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+}
+.returnAmount{
+    height:30%;
+    display: none;
+}
+.cashGiven{
+    height:20%;
+    display: none;
+    background-color: var(--color);
+}
+td,th{
+    background-color:var(--proceed);
+    padding:1rem;
+    width:3rem;
+    height:3rem;
+    text-align: center;
+}
+td{
+    height: 1rem;
+}
+table{
+    width:100%;
+}
+th{
+    background-color: var(--note);
+}
